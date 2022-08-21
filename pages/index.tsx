@@ -4,7 +4,9 @@ import type { NextPage } from "next";
 const Home: NextPage = () => {
 
     return (
-           <></>
+           <>
+           <h1>Change-me</h1>
+           </>
     );
 };
 
