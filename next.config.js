@@ -7,7 +7,7 @@ const nextConfig = {
     },
     trailingSlash: true,
     images: {
-        domains: ["res.cloudinary.com"],
+        domains: ["res.cloudinary.com", "github.com"],
     },
 };
 
