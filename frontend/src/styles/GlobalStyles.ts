@@ -17,6 +17,12 @@ const GlobalStyles = createGlobalStyle`
         padding: 0;
 }
 
+hr {
+            border-color: #fafafa;
+            width: 100%;
+            margin: 0;
+        }
+        
 a {
     color: inherit;
     text-decoration: none;

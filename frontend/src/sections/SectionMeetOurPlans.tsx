@@ -45,9 +45,12 @@ const PlaneModal = () => {
 export const SectionMeetOurPlans = () => {
     return (
         <Box
-        m={8}
+            m={{
+                xs: 2,
+                md: 4,
+                lg: 8
+            }}
             id="section-meet-out-plans"
-
         >
             <Heading textAlign="center" as="h2">
                 Our Pricing Plans

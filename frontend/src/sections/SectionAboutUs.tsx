@@ -6,6 +6,13 @@ import LivingRoomImage from "../assets/imgs/living-room-image.jpg";
 import maldivesIslandImage from "../assets/imgs/maldives-island.jpg";
 import blueSkyImage from "../assets/imgs/blue-sky.jpg";
 
+const dualContainerProps = {
+    display: "grid",
+    gridTemplateColumns: "repeat(2, 1fr)",
+    justifyContent: "center",
+    alignItems: "center",
+};
+
 export const SectionAboutUs = () => {
     return (
         <Container
@@ -16,15 +23,10 @@ export const SectionAboutUs = () => {
                 gridTemplateColumns: "1fr",
                 minHeight: "80vh",
                 justifyContent: "space-evenly",
+                background: "#fafafa",
             }}
         >
-            <Container
-                disableGutters={true}
-                sx={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                }}
-            >
+            <Container disableGutters={true} sx={dualContainerProps}>
                 <Image
                     unoptimized={true}
                     src={LivingRoomImage}
@@ -46,13 +48,7 @@ export const SectionAboutUs = () => {
                     </Typography>
                 </Container>
             </Container>
-            <Container
-                disableGutters={true}
-                sx={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                }}
-            >
+            <Container disableGutters={true} sx={dualContainerProps}>
                 <Container>
                     <Heading>Now!</Heading>
                     <Typography>
@@ -74,13 +70,7 @@ export const SectionAboutUs = () => {
                     alt="faster-container-image"
                 />
             </Container>
-            <Container
-                disableGutters={true}
-                sx={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr",
-                }}
-            >
+            <Container disableGutters={true} sx={dualContainerProps}>
                 <Image
                     src={blueSkyImage}
                     unoptimized={true}
