@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-
 import type { ContainerInterface } from "../../utils/types";
 
 export const Header = styled.header`
