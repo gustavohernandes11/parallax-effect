@@ -1,5 +1,5 @@
 import { Heading } from "components/Heading";
-import { TopHeader } from './TopHeader'
+import { TopHeader } from "./TopHeader";
 import { Nav } from "components/Nav";
 import * as Styled from "./styles";
 import Image from "next/image";
@@ -10,7 +10,13 @@ export const Header = () => {
         <Styled.Header>
             <TopHeader />
             <Styled.Container>
-            <Image src={Logo} alt="logo" width={32} height={32} />
+                <Image
+                    unoptimized={true}
+                    src={Logo}
+                    alt="logo"
+                    width={32}
+                    height={32}
+                />
 
                 <Nav />
             </Styled.Container>

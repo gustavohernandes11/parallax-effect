@@ -9,9 +9,8 @@ import blueSkyImage from "../assets/imgs/blue-sky.jpg";
 export const SectionAboutUs = () => {
     return (
         <Container
-        id="section-about-us"
-        disableGutters={true}
-
+            id="section-about-us"
+            disableGutters={true}
             sx={{
                 display: "grid",
                 gridTemplateColumns: "1fr",
@@ -27,6 +26,7 @@ export const SectionAboutUs = () => {
                 }}
             >
                 <Image
+                    unoptimized={true}
                     src={LivingRoomImage}
                     width={500}
                     height={300}
@@ -66,7 +66,7 @@ export const SectionAboutUs = () => {
                     </Typography>
                 </Container>
                 <Image
-
+                    unoptimized={true}
                     src={maldivesIslandImage}
                     width={500}
                     height={300}
@@ -83,6 +83,7 @@ export const SectionAboutUs = () => {
             >
                 <Image
                     src={blueSkyImage}
+                    unoptimized={true}
                     width={500}
                     height={300}
                     layout="intrinsic"

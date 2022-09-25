@@ -8,6 +8,7 @@ const nextConfig = {
     trailingSlash: true,
     images: {
         domains: ["res.cloudinary.com", "github.com"],
+        loader: "custom"
     },
 };
 
