@@ -27,14 +27,19 @@ p {
     letter-spacing: 0.00938em;
 }
 
-path {
-    fill: url("#my-cool-gradient");
-}
 
-.loading-page-spin {
+
+.loading-page {
+    width: 100%;
+    height: 100%;
+    display: flex;
     position: absolute;
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.MuiDrawer-paper {
+    padding: 20px;
 }
     `;
 

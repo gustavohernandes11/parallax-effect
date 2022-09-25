@@ -4,10 +4,9 @@ import {
     Typography,
     Button,
     Grid,
+    Box,
     Card,
     CardContent,
-    CardHeader,
-    Stack,
 } from "@mui/material";
 import { Heading } from "../components/Heading";
 
@@ -45,36 +44,25 @@ const PlaneModal = () => {
 
 export const SectionMeetOurPlans = () => {
     return (
-        <Container
-            disableGutters={true}
-            sx={{
-                width: "100%",
-                paddingTop: "60px",
-                background: "#FAFAFA"
-            }}
+        <Box
+        m={8}
+            id="section-meet-out-plans"
+
         >
             <Heading textAlign="center" as="h2">
                 Our Pricing Plans
             </Heading>
-            <Container
-                disableGutters={true}
-                sx={{
-                    display: "grid",
-                    gridTemplateColumns: "1fr 1fr 1fr",
-                    alignItems: "center",
-                    minHeight: "80vh",
-                }}
-            >
-                <Container sx={{ alignItems: "center" }}>
+            <Grid container>
+                <Grid xs={12} sm={4} p={2} sx={{ alignItems: "center" }}>
                     <PlaneModal />
-                </Container>
-                <Container sx={{ alignItems: "center" }}>
+                </Grid>
+                <Grid xs={12} sm={4} p={2} sx={{ alignItems: "center" }}>
                     <PlaneModal />
-                </Container>
-                <Container sx={{ alignItems: "center" }}>
+                </Grid>
+                <Grid xs={12} sm={4} p={2} sx={{ alignItems: "center" }}>
                     <PlaneModal />
-                </Container>
-            </Container>
-        </Container>
+                </Grid>
+            </Grid>
+        </Box>
     );
 };

@@ -9,6 +9,7 @@ export const Form = styled.form`
         justify-content: center;
         .MuiFormControl-root {
             width: 40%;
+            min-width: 250px;
         }
     `}
 `;

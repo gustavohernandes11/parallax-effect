@@ -3,7 +3,7 @@ import { Typography } from '@mui/material'
 export const TopHeader = () => {
     return (
         <Styled.Container>
-            <Typography>Contact</Typography>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         </Styled.Container>
     )
 }

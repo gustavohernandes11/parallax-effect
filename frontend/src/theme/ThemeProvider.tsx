@@ -2,11 +2,12 @@ import { ThemeProvider } from "styled-components";
 import { useState, useEffect } from "react";
 import { CircularProgress } from "@mui/material";
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
-import { deepmerge } from '@mui/utils'
+import { deepmerge } from "@mui/utils";
 
 import { lightPallete } from "./lightPallete";
 import { darkPallete } from "./darkPallete";
 import { sharedThemeProps } from "./sharedThemeProps";
+import { themeOptions } from "./MUIThemeOptions";
 import { useGlobalContext } from "../hooks/useGlobalContext";
 
 export let darkMUITheme = responsiveFontSizes(
@@ -40,7 +41,9 @@ export function Theme({ children }: any): JSX.Element {
     return (
         <ThemeProvider theme={lightMUITheme}>
             {loading ? (
-                <CircularProgress className="loading-page-spin" />
+                <section className="loading-page">
+                    <CircularProgress />
+                </section>
             ) : (
                 children
             )}

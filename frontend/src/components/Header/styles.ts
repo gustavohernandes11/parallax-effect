@@ -13,7 +13,6 @@ export const Container = styled.div`
         padding: 0 ${theme.spacings[14]};
 
         @media only screen and (max-width: 600px) {
-            flex-direction: column;
             padding: 0 ${theme.spacings[8]};
             font-size: ${theme.fontSizes.sm};
         }

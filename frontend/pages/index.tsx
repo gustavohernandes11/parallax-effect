@@ -1,10 +1,10 @@
 import React from "react";
 import type { NextPage } from "next";
-import { Section } from "components/Section";
-import { Heading } from "components/Heading";
 import { Header } from "components/Header";
+import { Footer } from "components/Footer";
 import { SectionApresentation } from '../src/sections/SectionApresentation'
 import { SectionMeetOurPlans } from '../src/sections/SectionMeetOurPlans'
+import { OurBenefitsSection } from '../src/sections/OurBenefitsSection'
 import { SectionAboutUs } from '../src/sections/SectionAboutUs'
 import { FormSection } from '../src/sections/FormSection'
 const Home: NextPage = () => {
@@ -12,9 +12,11 @@ const Home: NextPage = () => {
         <>
             <Header />
             <SectionApresentation />
+            <OurBenefitsSection/>
             <SectionAboutUs />
             <SectionMeetOurPlans />
             <FormSection />
+            <Footer />
         </>
     );
 };

@@ -1,19 +1,21 @@
-import { Section } from "../components/Section";
 import { Container, Typography, Button, Stack, Grid } from "@mui/material";
 import { Heading } from "../components/Heading";
 
 import Image from "next/image";
 import LivingRoomImage from "../assets/imgs/living-room-image.jpg";
+import maldivesIslandImage from "../assets/imgs/maldives-island.jpg";
+import blueSkyImage from "../assets/imgs/blue-sky.jpg";
+
 export const SectionAboutUs = () => {
     return (
         <Container
+        id="section-about-us"
         disableGutters={true}
 
             sx={{
                 display: "grid",
                 gridTemplateColumns: "1fr",
                 minHeight: "80vh",
-                gap: "30px",
                 justifyContent: "space-evenly",
             }}
         >
@@ -49,17 +51,8 @@ export const SectionAboutUs = () => {
                 sx={{
                     display: "grid",
                     gridTemplateColumns: "1fr 1fr",
-                    direction: "rtl",
-                    margin: "30px"
                 }}
             >
-                <Image
-                    src={LivingRoomImage}
-                    width={500}
-                    height={300}
-                    layout="intrinsic"
-                    alt="faster-container-image"
-                />
                 <Container>
                     <Heading>Now!</Heading>
                     <Typography>
@@ -72,6 +65,14 @@ export const SectionAboutUs = () => {
                         necessitatibus omnis ad.
                     </Typography>
                 </Container>
+                <Image
+
+                    src={maldivesIslandImage}
+                    width={500}
+                    height={300}
+                    layout="intrinsic"
+                    alt="faster-container-image"
+                />
             </Container>
             <Container
                 disableGutters={true}
@@ -81,7 +82,7 @@ export const SectionAboutUs = () => {
                 }}
             >
                 <Image
-                    src={LivingRoomImage}
+                    src={blueSkyImage}
                     width={500}
                     height={300}
                     layout="intrinsic"
