@@ -8,6 +8,7 @@ import { SectionMeetOurPlans } from "../src/sections/SectionMeetOurPlans";
 import { OurBenefitsSection } from "../src/sections/OurBenefitsSection";
 import { SectionAboutUs } from "../src/sections/SectionAboutUs";
 import { FormSection } from "../src/sections/FormSection";
+
 const Home: NextPage = () => {
     return (
         <>

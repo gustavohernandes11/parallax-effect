@@ -17,7 +17,7 @@ export const SectionApresentation = () => {
                 backgroundPosition: "center",
             }}
         >
-            <Container sx={{ alignItems: "center", width: "50%", minWidth: "300px" }}>
+            <Container sx={{ alignItems: "center", width: "60%", minWidth: "300px" }}>
                 <Heading>Turn your plans into money!</Heading>
                 <Typography>
                     sit amet consectetur, adipisicing elit. Architecto illo

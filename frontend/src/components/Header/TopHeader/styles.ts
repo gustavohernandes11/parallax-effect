@@ -4,7 +4,6 @@ export const Container = styled.div`
     ${({ theme }) => css`
         padding: ${theme.spacings[2]} ${theme.spacings[14]};
         border-bottom: 1px solid ${theme.colors.border};
-        background-color: ${theme.colors.surface};
         font-size: ${theme.fontSizes.xs};
         p {
             margin: 0

@@ -7,13 +7,13 @@ export const UsefulLinks = () => {
         <Container>
             <Heading as="h4">Links úteis</Heading>
             <Container disableGutters={true} sx={{ display: "flex", flexDirection: "column" }}>
-                <Link href="https://stackoverflow.com/" passHref={true}>
+                <Link href="/404" passHref={true}>
                     <MuiLink target="_blank">Apoiadores</MuiLink>
                 </Link>
-                <Link href="https://stackoverflow.com/" passHref={true}>
+                <Link href="/404" passHref={true}>
                     <MuiLink target="_blank">SAQ</MuiLink>
                 </Link>
-                <Link href="https://stackoverflow.com/" passHref={true}>
+                <Link href="/404" passHref={true}>
                     <MuiLink target="_blank"></MuiLink>
                 </Link>
                 <Link href="https://stackoverflow.com/" passHref={true}>

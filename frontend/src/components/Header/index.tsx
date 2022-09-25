@@ -1,4 +1,3 @@
-import { Heading } from "components/Heading";
 import { TopHeader } from "./TopHeader";
 import { Nav } from "components/Nav";
 import * as Styled from "./styles";
@@ -7,9 +6,11 @@ import Logo from "../../../public/favicon-32x32.png";
 
 export const Header = () => {
     return (
-        <Styled.Header>
-            <TopHeader />
-            <Styled.Container>
+        <>
+            <Styled.TopHeader>
+                <TopHeader />
+            </Styled.TopHeader>
+            <Styled.Header>
                 <Image
                     unoptimized={true}
                     src={Logo}
@@ -19,7 +20,7 @@ export const Header = () => {
                 />
 
                 <Nav />
-            </Styled.Container>
-        </Styled.Header>
+            </Styled.Header>
+        </>
     );
 };
