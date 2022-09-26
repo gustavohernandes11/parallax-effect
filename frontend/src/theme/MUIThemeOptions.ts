@@ -24,7 +24,7 @@ export const themeOptions: any = {
         background:
           'linear-gradient(45deg, #299049 30%, rgb(83, 166, 109) 90%)',
         border: 0,
-        borderRadius: 10,
+        borderRadius: 15,
         boxShadow: '0 3px 5px 2px rgba(0, 0, 0, .3)',
         color: 'white',
         height: 48,

@@ -19,21 +19,22 @@ export let lightMUITheme = responsiveFontSizes(
 
 export function Theme({ children }: any): JSX.Element {
     const [state, actions] = useGlobalContext();
-    const [loading, setLoading] = useState(true);
 
-    useEffect(() => {
-        setLoading(() => true);
-        const storagedTheme = localStorage.getItem("storagedTheme");
+    const [loading, setLoading] = useState(false);
 
-        if (storagedTheme === null || undefined) {
-            localStorage.setItem("storagedTheme", "light");
-            actions.changeTheme("dark");
-        } else {
-            actions.changeTheme(storagedTheme);
-        }
-        setLoading(() => false);
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
+    // useEffect(() => {
+    //     setLoading(() => true);
+    //     const storagedTheme = localStorage.getItem("storagedTheme");
+
+    //     if (storagedTheme === null || undefined) {
+    //         localStorage.setItem("storagedTheme", "light");
+    //         actions.changeTheme("dark");
+    //     } else {
+    //         actions.changeTheme(storagedTheme);
+    //     }
+    //     setLoading(() => false);
+    //     // eslint-disable-next-line react-hooks/exhaustive-deps
+    // }, []);
 
     function getTheme() {
         return state.activeTheme === "dark" ? darkMUITheme : lightMUITheme;

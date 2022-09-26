@@ -1,4 +1,5 @@
-import { Container, Typography, Button, Stack, Grid } from "@mui/material";
+import { Container, Typography, Button, Stack, Grid, Box } from "@mui/material";
+import { AnimateOnView } from "../utils/framerAnimations";
 import { Heading } from "../components/Heading";
 
 import Image from "next/image";
@@ -7,9 +8,7 @@ import maldivesIslandImage from "../assets/imgs/maldives-island.jpg";
 import blueSkyImage from "../assets/imgs/blue-sky.jpg";
 
 const dualContainerProps = {
-    display: "grid",
-    gridTemplateColumns: "repeat(2, 1fr)",
-    justifyContent: "center",
+    justifyContent: "space-around",
     alignItems: "center",
 };
 
@@ -19,24 +18,30 @@ export const SectionAboutUs = () => {
             id="section-about-us"
             disableGutters={true}
             sx={{
-                display: "grid",
-                gridTemplateColumns: "1fr",
                 minHeight: "80vh",
                 justifyContent: "space-evenly",
                 background: "#fafafa",
             }}
         >
-            <Container disableGutters={true} sx={dualContainerProps}>
-                <Image
-                    unoptimized={true}
-                    src={LivingRoomImage}
-                    width={500}
-                    height={300}
-                    layout="intrinsic"
-                    alt="faster-container-image"
-                />
-                <Container>
-                    <Heading>Faster!</Heading>
+            <Grid container sx={dualContainerProps}>
+                <Grid
+                    item
+                    xs={12}
+                    sm={5}
+                    p={{ xs: 2, lg: 3 }}
+                    alignItems="center"
+                >
+                    <Image
+                        unoptimized={true}
+                        src={blueSkyImage}
+                        width={500}
+                        height={300}
+                        layout="intrinsic"
+                        alt="faster-container-image"
+                    />
+                </Grid>
+                <Grid xs={12} sm={5} item p={{ xs: 2, sm: 0 }}>
+                    <Heading>Lorem ipsum!</Heading>
                     <Typography>
                         sit amet consectetur, adipisicing elit. Architecto illo
                         earum, veniam culpa error atque dignissimos minus nemo.
@@ -46,11 +51,27 @@ export const SectionAboutUs = () => {
                         distinctio nesciunt a? Quos quisquam nulla sapiente,
                         necessitatibus omnis ad.
                     </Typography>
-                </Container>
-            </Container>
-            <Container disableGutters={true} sx={dualContainerProps}>
-                <Container>
-                    <Heading>Now!</Heading>
+                </Grid>
+            </Grid>
+            <Grid container sx={dualContainerProps}>
+                <Grid
+                    item
+                    xs={12}
+                    sm={5}
+                    p={{ xs: 2, lg: 3 }}
+                    alignItems="center"
+                >
+                    <Image
+                        unoptimized={true}
+                        src={LivingRoomImage}
+                        width={500}
+                        height={300}
+                        layout="intrinsic"
+                        alt="faster-container-image"
+                    />
+                </Grid>
+                <Grid xs={12} sm={5} item p={{ xs: 2, sm: 0 }}>
+                    <Heading>Lorem ipsum!</Heading>
                     <Typography>
                         sit amet consectetur, adipisicing elit. Architecto illo
                         earum, veniam culpa error atque dignissimos minus nemo.
@@ -60,27 +81,27 @@ export const SectionAboutUs = () => {
                         distinctio nesciunt a? Quos quisquam nulla sapiente,
                         necessitatibus omnis ad.
                     </Typography>
-                </Container>
-                <Image
-                    unoptimized={true}
-                    src={maldivesIslandImage}
-                    width={500}
-                    height={300}
-                    layout="intrinsic"
-                    alt="faster-container-image"
-                />
-            </Container>
-            <Container disableGutters={true} sx={dualContainerProps}>
-                <Image
-                    src={blueSkyImage}
-                    unoptimized={true}
-                    width={500}
-                    height={300}
-                    layout="intrinsic"
-                    alt="faster-container-image"
-                />
-                <Container>
-                    <Heading>Faster!</Heading>
+                </Grid>
+            </Grid>
+            <Grid container sx={dualContainerProps}>
+                <Grid
+                    item
+                    xs={12}
+                    sm={5}
+                    p={{ xs: 2, lg: 3 }}
+                    alignItems="center"
+                >
+                    <Image
+                        unoptimized={true}
+                        src={maldivesIslandImage}
+                        width={500}
+                        height={300}
+                        layout="intrinsic"
+                        alt="faster-container-image"
+                    />
+                </Grid>
+                <Grid xs={12} sm={5} item p={{ xs: 2, sm: 0 }}>
+                    <Heading>Lorem ipsum!</Heading>
                     <Typography>
                         sit amet consectetur, adipisicing elit. Architecto illo
                         earum, veniam culpa error atque dignissimos minus nemo.
@@ -90,8 +111,8 @@ export const SectionAboutUs = () => {
                         distinctio nesciunt a? Quos quisquam nulla sapiente,
                         necessitatibus omnis ad.
                     </Typography>
-                </Container>
-            </Container>
+                </Grid>
+            </Grid>
         </Container>
     );
 };
