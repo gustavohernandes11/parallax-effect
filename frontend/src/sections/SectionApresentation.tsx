@@ -18,7 +18,7 @@ export const SectionApresentation = () => {
             <Container
                 sx={{ alignItems: "center", width: "60%", minWidth: "300px" }}
             >
-                    <Heading>Turn your plans into money!</Heading>
+                    <Heading>Landing page!</Heading>
                     <Typography>
                         sit amet consectetur, adipisicing elit. Architecto illo
                         earum, veniam culpa error atque dignissimos minus nemo.
@@ -33,7 +33,7 @@ export const SectionApresentation = () => {
                     </Typography>
                     <Grid container mt={4} gap={2}>
                         <Button color="primary" variant="contained">
-                            Saiba mais
+                        Atque dignissimos
                         </Button>
                     </Grid>
             </Container>

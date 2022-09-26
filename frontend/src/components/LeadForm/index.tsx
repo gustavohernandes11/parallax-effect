@@ -6,7 +6,7 @@ export const LeadForm = () => {
         <Styled.Form>
             <TextField label="Name" variant="outlined" />
             <TextField label="Email" variant="outlined" />
-            <Button variant="contained">Assinar</Button>
+            <Button variant="contained">Send</Button>
         </Styled.Form>
     );
 };

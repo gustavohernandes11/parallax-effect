@@ -7,6 +7,9 @@ import { Button, IconButton, Drawer } from "@mui/material";
 const MenuLinks = () => {
     return (
         <>
+        <Link href="#top">
+                <Button>Home</Button>
+            </Link>
             <Link href="#section-why-us">
                 <Button>Why us?</Button>
             </Link>

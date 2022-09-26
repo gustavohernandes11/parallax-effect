@@ -17,7 +17,7 @@ export const FormSection = () => {
             }}
         >
             <Heading as="h2" textAlign="center">
-                Stay informed
+                Your best email!
             </Heading>
             <LeadForm />
         </Box>

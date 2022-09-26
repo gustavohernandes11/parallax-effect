@@ -4,8 +4,8 @@ const GlobalStyles = createGlobalStyle`
  
 * {
     box-sizing: border-box;
-   
-}
+   scroll-behavior: smooth;
+};
 
  html,
  body {
@@ -15,7 +15,7 @@ const GlobalStyles = createGlobalStyle`
         Helvetica Neue, sans-serif;
         margin: 0;
         padding: 0;
-}
+};
 
 hr {
             border-color: #fafafa;
@@ -32,9 +32,6 @@ p {
     line-height: 1.5;
     letter-spacing: 0.00938em;
 }
-
-
-
 .loading-page {
     width: 100%;
     height: 100%;
@@ -47,6 +44,6 @@ p {
 .MuiDrawer-paper {
     padding: 20px;
 }
-    `;
+  `;
 
 export default GlobalStyles;
