@@ -1,8 +1,8 @@
 import * as Styled from './styles'
 
-export const Section = ({children}: any) => {
+export const Section = ({children, id}: any) => {
     return (
-        <Styled.Container>
+        <Styled.Container id={id}>
             {children}
         </Styled.Container>
     )

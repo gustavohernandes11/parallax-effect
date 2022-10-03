@@ -17,9 +17,6 @@ const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
 };
-.landing-scroll {
-  min-height: 500vh;
-}
   `;
 
 export default GlobalStyles;

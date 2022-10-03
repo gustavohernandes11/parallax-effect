@@ -12,7 +12,7 @@ interface HeadingType {
 export const Heading = ({ children, id, as = "h1", className, textAlign, size }: HeadingType) => {
 
     return (
-        <Styled.Wrapper className={className} textAlign={textAlign} as={as} id={id} size={size}>
+        <Styled.Wrapper  className={className} textAlign={textAlign} as={as} id={id} size={size}>
             {children}
         </Styled.Wrapper>
     );
